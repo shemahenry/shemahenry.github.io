@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-body {
-  background-image: url("car1.jpg");
-  background-position: center;
-   background-size: 103%;
-   background-color: powderblue;
-}
+<title>contact</title>
+<style> 
 div {
   border: 1px ;
   padding: 5px;
-  background-color: black;
+  background-color: gray;
 }
 a.one:link {color:white;}
-a.one:visited {color:white;}
+a.one:visited {color:black;}
 a.one:hover {font-family:monospace;}
 
 a.two:link {color:white;}
@@ -24,18 +19,6 @@ a.two:link {color:white;}
     padding: 16px; 
     font-size: 16px; 
     border: none; 
-}
-a.three:link, a:visited {
-  background-color: #f44336;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-
-a.three:hover, a:active {
-  background-color: red;
 } 
 .dropdown { 
     position: relative; 
@@ -71,8 +54,29 @@ a.three:hover, a:active {
     background-color: black; 
 } 
 
+textarea {
+  width: 50%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+a.three:link, a.three:visited {
+  background-color: gray;
+  color: black;
+  padding: 9px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.three:hover, a.three:active {
+  background-color: white;
+}
 </style>
-<title>RoCars</title>
 </head>
 <body>
 <div>
@@ -90,13 +94,20 @@ a.three:hover, a:active {
 </h1>
 </div>
 
+<center>
+<h1>Signing in</h1>
 
-<h2 style="color: white; font-size:200%">Welcome to RoCars</h2>
-<p1 style="color: white; font-size:100%">
-This is the best place to buy top brands new cars!<br>
- The purpose of this website is to convey to the viewer the beauty of our cars.<br><br><br>
- Click on the link below to view available cars:
-<br>
-<h3><a class="three" href="index1.html">Cars for sale</a></h3>
+<form action="/action_page.php">
+  <label for="fname">Username:</label>
+  <input type="text" id="fname" name="fname" placeholder="Your username"><br><br>
+  
+   <label for="email">password:</label>
+  <input type="password" id="email" name="email" placeholder="enter password"><br><br>
+
+<input type="checkbox" id="ii" name="ii" value="rem">
+<label for="ii"> Keep me signed in</label><br><br><br>
+<b><a class="three" href="index.html">Signin</a></b>
+</form>
+</center>
 </body>
 </html>
